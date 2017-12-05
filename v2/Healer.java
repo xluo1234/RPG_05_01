@@ -1,29 +1,17 @@
-public class Protagonist extends Character{
+public class Healer extends Protagonist{
+    private double healing;
 
-    private String name;
 
-    public Protagonist(String pname){
-	name = pname;
-	hp = 125;
-	strength = 100;
-	defense = 40;
-	atk = 0.4;
+    public Healer(String hname){
+        super(hname);
+	healing = .3;
     }
 
-    public String getName(){
-	return name;
+    public int aid(Protagonist ally){
+	int healed = (int)(ally.hp * healing);
+	ally.increaseHP(healed);
+	return healed;
     }
 
- 
 
-    public void specialize(){
-	defense -= 20;
-	atk += .2;
-	    
-    }
-
-    public void normalize(){
-	defense = 40;
-	atk = 0.4;
-    }
 }

@@ -1,6 +1,6 @@
 public class Protagonist extends Character{
 
-    private String name;
+    protected String name;
 
     public Protagonist(String pname){
 	name = pname;
@@ -25,5 +25,9 @@ public class Protagonist extends Character{
     public void normalize(){
 	defense = 40;
 	atk = 0.4;
+    }
+
+    public void increaseHP(int heal){
+	hp += heal;
     }
 }
