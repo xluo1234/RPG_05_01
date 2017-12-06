@@ -6,5 +6,9 @@ public class Monster extends Character{
 	defense = 20;
 	atk = 0.7;
     }
+
+    public String toString(){
+	return " hp: " + hp + " strength: " + strength + " defense: " + defense + " atk: " + atk; 
+    }
   
 }
