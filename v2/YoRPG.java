@@ -75,7 +75,7 @@ public class YoRPG
     s += "\nChoose your character: \n";
     s += "\tHealer: Healer\n";
     s += "\tKnight: Knight\n";
-    s += "\tWizard: Wizard\n";
+    s += "\tAssassin: Assassin\n";
     s += "Selection: ";
     System.out.print( s );
 
