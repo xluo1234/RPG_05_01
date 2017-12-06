@@ -30,4 +30,8 @@ public class Protagonist extends Character{
     public void increaseHP(int heal){
 	hp += heal;
     }
+
+    public String toString(){
+	return name + " hp: " + hp + " strength: " + strength + " defense: " + defense + " atk: " + atk; 
+    }
 }
