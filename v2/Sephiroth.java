@@ -1,4 +1,5 @@
 public class Sephiroth extends Monster{
+    private Boolean meteorUsed;
     
     public Sephiroth(){
 	hp = 1500;
@@ -8,8 +9,11 @@ public class Sephiroth extends Monster{
     }
 
     public void Meteor(Character enemy){
+	if(meteorUsed){System.out.println("you used meteor already");}
+	else{
 	int damage = enemy.hp/2;
 	enemy.lowerHP(damage);
+	meteorUsed = true;}
     }
 
     public String toString(){
