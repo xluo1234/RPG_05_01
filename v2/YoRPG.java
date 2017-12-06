@@ -72,8 +72,21 @@ public class YoRPG
 	    name = in.readLine();
     } catch ( IOException e ) { }
 
+    s += "\nChoose your character: \n";
+    s += "\tHealer: Healer\n";
+    s += "\tKnight: Knight\n";
+    s += "\tWizard: Wizard\n";
+    s += "Selection: ";
+    System.out.print( s );
+
+    try{
+    protagonistType = in.readLine();
+    } catch (I0Exception e) {}
+
     //instantiate the player's character
-    pat = new Protagonist( name );
+    if (protagonistType == Healer)
+	pat = new Protagonist( name );
+    else if /* Hey peeps insert your code here*/
 
   }//end newGame()
 
