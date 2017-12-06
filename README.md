@@ -1,5 +1,6 @@
 # RPG_05_01
 1.Healer can recover another protagonist's hp by 30%.
+
 2.Assassin can backstab, having a chance to crit and do double damage.
 
 Monster subclass:
