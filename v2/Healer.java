@@ -13,5 +13,9 @@ public class Healer extends Protagonist{
 	return healed;
     }
 
+     public String toString(){
+	return "The healer can help you recover hp" +  super.toString();
+    }
+
 
 }

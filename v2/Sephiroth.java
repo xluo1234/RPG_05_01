@@ -17,7 +17,7 @@ public class Sephiroth extends Monster{
     }
 
     public String toString(){
-	return " hp: " + hp + " strength: " + strength + " defense: " + defense + " atk: " + atk; 
+	return "Sephiroth is really strong b careful" +  super.toString();
     }
 
   
