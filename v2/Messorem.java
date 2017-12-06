@@ -12,7 +12,7 @@ public class Messorem extends Monster {
 	//relatively low defense, ranges from 10 to 20
 	defense = (int) (Math.random() * 10 + 10);
 	//attack multiplier is 1, extremely strong
-	atk = 1;
+	atk = 0.9;
 	//starts off with 3
 	reapUsed = 3;
     }
@@ -25,8 +25,8 @@ public class Messorem extends Monster {
 	    System.out.println("Messorem has used Reap already");}
 	else {
 		//made it so that the damage reap does with armor is reduced for "testing the soul"
-		//damage ranges from 0 - 250
-	    int damage = (int) (strength * atk * enemy.getDefense() / 16);
+		//damage ranges from 16 - 247
+	    int damage = (int) (strength * atk * (4 + enemy.getDefense()) / 16);
 	    enemy.lowerHP(damage);
 	    reapUsed--;}
     }
