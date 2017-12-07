@@ -16,6 +16,10 @@ public class Assassin extends Protagonist{
 	//Assassin constructor
     public Assassin(String aName) {
 	super(aName);
+	hp = 100;
+	strength = 125;
+	defense = 40;
+	atk = 0.5;
 	critChance = 0.5;
     }
 
